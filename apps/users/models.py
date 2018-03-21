@@ -3,6 +3,7 @@ from django.db import models
 # Create your models here.
 from django.contrib.auth.models import AbstractUser
 
+from PIL import Image
 
 class UserProfile(AbstractUser):
     nick_name = models.CharField(max_length=50, verbose_name=u'昵称', blank=True, null=True)
